@@ -1,11 +1,10 @@
 <h1>Listing users</h1>
 
+<p id="notice"><%= notice %></p>
+
 <table>
   <tr>
-    <th>\</th>
     <th>Name</th>
-    <th>Hashed password</th>
-    <th>Salt</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,10 +12,7 @@
 
 <% @users.each do |user| %>
   <tr>
-    <td><%= user.\ %></td>
     <td><%= user.name %></td>
-    <td><%= user.hashed_password %></td>
-    <td><%= user.salt %></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
