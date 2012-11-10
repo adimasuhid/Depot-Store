@@ -1,0 +1,15 @@
+
+$("#cart").html("<%= escape_javascript(render(@cart)) %>");
+
+$("#notice").hide("slow");
+
+
+$("#cart").effect('blind', 
+{
+  mode: 'show|hide',
+  direction: 'horizontal|vertical'
+},
+speed,
+callback);
+
+$("#current_item").effect("highlight",{}, "fast");
